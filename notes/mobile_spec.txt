@@ -1,0 +1,66 @@
+
+Mobile First Design - content should be designed with the mobile first perspective
+all content should be available on mobile devices & smartphones
+You should not have a media query for this mobile view (min or max width)
+We will deduct points if you use a max-width media query on this assignment
+The font is big enough for me to click on each link from a mobile device (we recommend checking on your device)
+Use of fluid measurements (%, rem, em, fr, vw, etc.) where possible and where it makes sense for your design
+We are expecting you to heavily use Grid for this assignment - how you choose to deploy it is up to you. 
+You should use Grid on at least 2 pages (though you can use it for all 4!)
+Using just a 1 column Grid isn't an example of good responsive web design (RWD)
+You can use Flex (but are not required to )
+
+Style Files
+You should have a maximum of 2 styled CSS files
+This includes your html5reset.css style sheet - choose one from the assignments we’ve given you or find one online that you prefer
+This will also include one style.css file that you have created
+You should not have separate css files for each page - and we will deduct points if we see this.
+
+Consistent Content and Layout
+Skip to Main Each page has a "Skip to Main Content"Links to an external site. link that only appears when it has focus (using the tab key) and works
+When selected it should jump me to the main tag. 
+Should be hidden upon page load
+When it has focus it becomes visible
+When selected it jumps me to the main tag
+You can use the same styling and format you used for HW#3
+Video on what this is and how to get startedLinks to an external site.
+W3Schools tutorial on Skip to Main links (and styling them)Links to an external site.
+
+Navigation-  All four pages are linked via a common navigation structure that works well for a mobile device
+Order of navigation elements should stay the same on all of your pages
+You use CSS to indicate the current page (Active page) within the links in the navigation
+Consider what you need to do to make this accessible - you shouldn’t rely on just changing the text color
+Your menu should work for a smaller mobile view 
+I can easily click on all links and buttons when viewing this site on my mobile device. 
+Each page should have a unique name (H1) which should match with your title to some degree
+
+Footer: You should have a consistent footer across your site - this means your footer should be the same across all of your pages and the information should be the same across all of your pages. 
+Hubspot: Website Footers: Best Design Practices & 24 Top ExamplesLinks to an external site.
+18 Website Footer Examples that Boost Clicks and EngagementLinks to an external site.
+Website Footer Design: Best Practices, Tips and Many ExamplesLinks to an external site.
+Visual Look and Feel
+Your design is visually appealing and modern looking
+Your design fits within and utilizes the UM Branding GuidelinesLinks to an external site.
+
+Accessibility
+The website will be fully accessible and will pass accessibility validators such as WAVE,Axe, W3 validators
+Consider how your website matches this a11y checklistLinks to an external site.
+Do your URL’s match up to some degree with your title and page name? 
+Did you include media queries to ensure that any gifs or other animation are not displayed when the user prefers reduced-motion?
+If you have errors that you don’t think should count against your grade, include that in your Client Writeup.
+
+Tips:
+If you’re having trouble getting started I would recommend sketching out your mobile view on paper to get an idea about what your layout could look like
+Here’s a mobile template you can useLinks to an external site.
+I would recommend using “flexible” (relative) units Links to an external site.such as % or fr instead of absolute units (px) for styling your mobile view as that will make it more responsive in the future. 
+Website for design inspiration: https://stylestage.dev/styles/Links to an external site. (yes, you should copy their css if you like it!)
+Use Inspect Element to see
+Responsive ViewsLinks to an external site.
+CSSLinks to an external site.
+See your Grid layoutLinks to an external site.
+What your focus style looks like Links to an external site.
+Check your site for other issues.  Are you using the reset style stylesheet?  Did you remember to include the viewport meta tag? Do you have console errors?  Did you use proper naming conventions (no uppercase letters or spaces, mnemonic file names, etc.)  
+Double check your website against the grading rubric in Canvas!
+Did you know you can hyperlink phone numbers and email addresses?
+Telephone numbersLinks to an external site.
+Email linksLinks to an external site.

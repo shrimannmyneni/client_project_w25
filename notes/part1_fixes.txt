@@ -1,0 +1,8 @@
+Functioning menu
+I would recommend you relabel your files and your links in the navigation to match with the page names (i.e instead of page 2, I would call this "Study Spaces"). That will be a much better user experience for your end user.
+
+WAVE Validation
+Be sure to resolve the errors on the Home, Community, Study Spaces, and Student Health pages.
+
+AXE
+Also, be sure to resolve the errors on the Home, Community, and Study Spaces, and submit a screenshot of the Student Health scan with Axe.

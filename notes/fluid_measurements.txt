@@ -1,0 +1,36 @@
+Thinking in terms of text size? Ems / Rems
+
+Thinking of a child compared to a parent? Percentage
+
+Thinking in terms of the screen size? Vh Vw Vmin Vmax
+
+Thinking in terms of "this number is what i set and no relative changes affect it's value"? Px
+
+Thinking in terms of print dots? Pt
+
+Thinking in terms of Printing Presses with moveable type? Pc
+
+Thinking in terms of The same character size as the default input sizings? Ch
+
+Thinking in terms of grid fractions? Fr
+
+
+
+
+px: Setting base size for your project (define on body). Typically used minimally, with em doing the brunt of hte work
+
+rem: Setting relative size (headings, body text, etc). Used liberally for 'generic ui elements' and often avoided for specifics.
+
+em: Setting styles inline with your content (subscript, superscript, 'effects' on your items that are dependent on the item's size, etc). Used liberally for 'custom ui elements' and often avoided for generics. iirc it represents uppercase letter scale of the font.
+
+vw/vh: Filling viewports, often used alongside media queries. Typically used for wrappers around your content.
+
+vmin/vmax: Filling viewports based on the smallest/largest available size, often used alongside media queries. Typically used for wrappers around your content.
+
+%: use when parent is a fixed size, or to 100% fill a container, often used alongside media queries. Typically used in subwrappers to scale content.
+
+ch: explicitly defining width of a section of text, typically used for paragraphs and inputs
+
+lh: vertically aligning block elements with text, typically used with inline block elements that need to be aligned along a center horizontal axis
+
+ex: rarely used over em, but typically for vertical measurements of text. iirc represents lowercase letter scale of the font.

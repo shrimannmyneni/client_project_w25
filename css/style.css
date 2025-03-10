@@ -1,0 +1,267 @@
+:root {
+    /* Primary  */
+    --maize: #FFCB05;
+    --michigan-blue: #00274C;
+
+    /* Secondary  */
+    --tappan-red: #9A3324;
+    --ross-orange: #D86018;
+    --rackham-green: #75988D;
+    --wave-field-green: #A5A508;
+    --taubman-teal: #00B2A9;
+    --arboretum-blue: #2F65A7;
+    --a2-amethyst: #702082;
+    --matthaei-violet: #575294;
+    --umma-tan: #CFC096;
+    --burton-tower-beige: #9B9A6D;
+    --angell-hall-ash: #989C97;
+    --law-quad-stone: #655A52;
+    --diag-m-metallic: #8B6F4F;
+    --puma-black: #131516;
+}
+
+/*################################ HEADER ELEMENTS ########################################*/
+header {
+    width: 100%;
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+
+/*BEGIN NAV */
+nav {
+    background-color: var(--michigan-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    width: 100%;
+} 
+
+
+nav img {
+    display: block;
+    margin: 0 auto;
+    max-width: 5rem;
+    padding: 1rem 0;
+    margin-left: 1rem;
+    justify-self: center;
+}
+
+nav a{
+    color: var(--maize);
+    text-decoration: none;      
+    font-size:small;
+    padding: 5px;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+}
+
+nav ul {
+    display: flex;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+nav li{
+    display: inline-block;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+nav li:hover{
+    border: 1px solid var(--maize);
+}
+
+.active a{
+    color: white;
+    font-weight: bold;
+}
+
+/* header styles*/
+
+h1 {
+    width: 100%;
+    max-width: 100vw;
+    background: var(--michigan-blue);
+    text-align: center;
+    justify-self: center;
+    padding: 2rem;
+    border-top: .2rem dashed var(--maize);
+    color: var(--maize);
+    font-size: clamp(2.5rem, 5vw, xx-large);
+    text-transform: uppercase;
+    font-weight: 700; 
+}
+
+
+
+
+/*SKIP NAV */
+.skip a{
+    position: absolute;
+    top: -40px;
+}
+
+.skip a:focus{
+    top: 20px;
+    color:#FFFFFF; 
+}
+
+h1, h2, h3, h4, h5, h6, a, p, li, figcaption{
+    font-family:'Segoe UI', Tahoma, sans-serif;
+}
+
+
+
+/*################################ MAIN ELEMENTS ########################################*/
+/* .container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+} */
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 3fr 9fr 3fr 1fr;
+    row-gap: 15px;
+}
+
+.prelude{
+    grid-column: 2 / span 3;
+    background-color: var(--michigan-blue);
+    /* border: 1rem solid var(--michigan-blue); */
+    overflow: scroll;
+    padding: 1rem;
+    border-left: .5rem solid var(--maize); 
+    margin: 1rem 0;
+}
+
+.prelude h2{
+    color: #FFFFFF;
+}
+
+.prelude p{
+    color: #FFFFFF;
+    padding: 1rem;
+    font-style: italic;
+}
+
+.group{
+    background-color: var(--maize);
+    border: 1px solid var(--michigan-blue);
+    border-left: .5rem solid var(--michigan-blue);
+    grid-column: 2 / span 3;
+    margin: 1rem 0rem;
+    padding: 1rem;
+}
+
+.group-heading{
+   padding: .5rem;
+}
+
+.group img{
+    display: grid;
+    max-width: 75%;
+    justify-self: center;
+    border: 3px solid var(--michigan-blue);
+    margin: 2rem;
+}
+
+.group ol{
+    display:block;
+    justify-self: center;
+}
+
+.group li{
+    padding: 1rem 2rem;
+}
+
+.index-body{
+    margin: 1rem;
+}
+
+
+
+
+.section{
+    padding: 1rem;
+}
+
+.section:nth-of-type(even) img{
+    border-left: .75rem solid var(--michigan-blue);
+}
+
+.section:nth-of-type(odd) img{
+    border-right: .75rem solid var(--michigan-blue);
+}
+
+
+
+/*Section based stuff*/
+
+.caption{
+    font-style: italic;
+}
+
+/*################################ FOOTER ELEMENTS ########################################*/
+footer {
+    background-color: var(--michigan-blue);
+    text-align: center;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem; /* Adds space between columns */
+    max-width: 90%;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* Adds space between links */
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+    color: var(--maize);
+    text-decoration: underline;
+}
+
+.footer-text {
+    font-size: 0.9rem;
+    margin-top: 1.5rem;
+    color: var(--maize);
+    padding: .5rem;
+    border: .1rem solid white;
+    border-right: 1rem solid var(--maize);
+}
+
+/* Media Queries*/
+
+
+/*REduced motion*/
+
+@media (prefers-reduced-motion: reduce) {
+    footer a{
+      transition: none;
+    }
+}
+  
