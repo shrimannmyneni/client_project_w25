@@ -4,7 +4,7 @@
     --michigan-blue: #00274C;
 
     /* Secondary  */
-    --tappan-red: #9A3324;
+    /* --tappan-red: #9A3324;
     --ross-orange: #D86018;
     --rackham-green: #75988D;
     --wave-field-green: #A5A508;
@@ -17,7 +17,7 @@
     --angell-hall-ash: #989C97;
     --law-quad-stone: #655A52;
     --diag-m-metallic: #8B6F4F;
-    --puma-black: #131516;
+    --puma-black: #131516; */
 }
 
 /*################################ HEADER ELEMENTS ########################################*/
@@ -52,15 +52,15 @@ nav img {
 nav a{
     color: var(--maize);
     text-decoration: none;      
-    font-size:small;
-    padding: 5px;
+    font-size:smaller;
+    padding: 2px;
     font-weight: 400;
-    letter-spacing: 0.05rem;
+    letter-spacing: 0.03rem;
 }
 
 nav ul {
     display: flex;
-    gap: 1.5rem;
+    gap: 1rem;
     padding: 0;
     margin: 0;
 }
@@ -72,10 +72,8 @@ nav li{
 nav a:hover {
     text-decoration: underline;
     font-weight: bold;
-}
-
-nav li:hover{
-    border: 1px solid var(--maize);
+    color: #FFFFFF;
+    transition: color 0.4s ease-in-out;
 }
 
 .active a{
