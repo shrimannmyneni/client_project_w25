@@ -92,7 +92,7 @@ h1 {
     padding: 2rem;
     border-top: .2rem dashed var(--maize);
     color: var(--maize);
-    font-size: clamp(2.5rem, 5vw, xx-large);
+    font-size: clamp(2.5rem, 5vw, 4rem);
     text-transform: uppercase;
     font-weight: 700; 
 }
