@@ -98,8 +98,13 @@
                 <a href="https://basicneeds.studentlife.umich.edu/">U-M Student Basic Needs Website</a>
             </div>
         </div>
-        <p class="footer-text">© 2025 University of Michigan. All rights reserved.</p>
+        <p class="footer-text">© <span id="year"></span> University of Michigan. All rights reserved.</p>
     </footer>
+    
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+
     
     
 </body>
