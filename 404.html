@@ -14,42 +14,82 @@
         <nav>
             <img src="images/SI/UMSI_signature_vertical_informal_solidblue.jpg" alt="University of Michigan School of Information logo">
         </nav>
-        <h1>404 (PageNotFound)</h1>
+        <h1>404 (Page Not Found) :(</h1>
     </header>
 
     <main class="container" id="main">
-        <div class="group">
+        <div class="group404">
             <div class="pageNotFound">
                 <p>It looks like the page you’re looking for doesn’t exist or may have moved. <br>
                 Please return to the <a href="/">homepage</a> to find your way back.</p>
+                <br>
+                <br>
+                <p>Interested in learning more about how this website was made?</p><br>
+                <p>Have have any more questions on how to access resources through UMSI?</p><br>
+                <p>Fill out the form at the bottom to contact the website development team.</p>
             </div>
         </div>
          
     </main>
 
-    <footer>
-        <div class="footer-links">
-            <div class="footer-column">
-                <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising</a>
+    <footer id="contact">
+        <h2 className="prelude">Contact the Team</h2>
+        <form id="contact-form">
+            <div class="field">
+                <label for="name">Name</label><br>
+                <input type="text" name="from_name" placeholder="Your Name" required /><br>
             </div>
-            <div class="footer-column">
-                <a href="https://maizepages.umich.edu/organizations">Maize Pages</a>
+
+            <div class="field">
+                <label for="email">Email</label><br>
+                <input type="email" name="from_email" placeholder="Your Email" required/><br>
             </div>
-            <div class="footer-column">
-                <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">More Study Spots</a>
+
+            <div class="field">
+                <label for="message">Message</label><br>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea><br>
             </div>
-            <div class="footer-column">
-                <a href="https://basicneeds.studentlife.umich.edu/">U-M Student Basic Needs Website</a>
-            </div>
-        </div>
+            
+            <button type="submit">Send</button>
+        </form>
         <p class="footer-text">© <span id="year"></span> University of Michigan. All rights reserved.</p>
     </footer>
-    
-    <script>
-        document.getElementById("year").innerHTML = new Date().getFullYear();
-    </script>
 
-    
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        emailjs.init('0roZsgpq669cIxVmW') // EmailJS Pub Key
+
+        const form = document.getElementById('contact-form')
+      
+        form.addEventListener('submit', function(e) {
+          e.preventDefault()
+
+        //   //prevent mutiple submissions
+        //   submitButton.disabled = true
+        //     submitButton.textContent = 'Sending...'
+      
+          emailjs.sendForm('service_a7e1eln', 'template_y0nlulo', this, '0roZsgpq669cIxVmW')
+            .then(function(response) {
+              console.log('SUCCESS', response.text)
+              alert('Email Sent!\n Redirecting you back to the home page...')
+              form.reset()
+
+              // redirect
+              setTimeout(() => {
+                window.location.href = '/'
+              }
+            ,1000)
+            }, function(error) {
+              console.log('FAILED', error.text)
+              alert('Email failed to send. Try again later.')
+
+            // // Re-enable submit on error if something goes wrong
+            // submitButton.disabled = false
+            // submitButton.textContent = 'Send'
+
+            })
+        })
+      </script>
     
 </body>
 </html>
